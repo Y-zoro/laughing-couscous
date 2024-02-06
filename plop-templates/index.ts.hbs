@@ -1,0 +1,61 @@
+import * as api from '@/api/{{url}}'
+
+export const $api = api
+
+// 新增编辑 form
+export const form: any = ref({
+    id: '',
+    field1: '',
+    field2: '',
+    field3: '',
+    field4: '',
+    field5: '',
+    field6: ''
+})
+
+export const rules = reactive({
+    field1: { message: '请输入字段1' },
+    field2: { message: '请选择字段2' },
+    field3: { message: '请选择字段3' },
+    field4: { message: '请选择字段4' }
+})
+
+export const add = () => {
+    form.value = {
+        id: '',
+        field1: '',
+        field2: '',
+        field3: '',
+        field4: '',
+        field5: '',
+        field6: ''
+    }
+    uni.navigateTo({
+        url: '/pages/{{url}}/add'
+    })
+}
+
+export const edit = (item: any) => {
+    form.value.id = item.id
+    uni.navigateTo({
+        url: '/pages/{{url}}/add'
+    })
+}
+
+// 详情form
+export const detailForm: any = ref({
+    id: '',
+    field1: '',
+    field2: '',
+    field3: '',
+    field4: '',
+    field5: '',
+    field6: ''
+})
+
+export const detail = (item: any) => {
+    detailForm.value.id = item.id
+    uni.navigateTo({
+        url: '/pages/{{url}}/detail'
+    })
+}

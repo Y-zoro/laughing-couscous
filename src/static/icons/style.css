@@ -1,0 +1,124 @@
+@font-face {
+    font-display: block;
+    font-family: icomoon;
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/icomoon.eot?oirojt');
+    src:
+        url('fonts/icomoon.eot?oirojt#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?oirojt') format('truetype'),
+        url('fonts/icomoon.woff?oirojt') format('woff'),
+        url('fonts/icomoon.svg?oirojt#icomoon') format('svg');
+}
+
+[class^='qc-icon-'],
+[class*=' qc-icon-'] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: icomoon !important;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    speak: never;
+    text-transform: none;
+}
+
+.qc-icon-qualified::before {
+    content: '\e900';
+}
+
+.qc-icon-time-fill::before {
+    content: '\e902';
+}
+
+.qc-icon-edit::before {
+    content: '\e903';
+}
+
+.qc-icon-photo::before {
+    content: '\e907';
+}
+
+.qc-icon-calendar::before {
+    content: '\e908';
+}
+
+.qc-icon-succeed::before {
+    content: '\e90b';
+}
+
+.qc-icon-phone::before {
+    content: '\e90d';
+}
+
+.qc-icon-add::before {
+    content: '\e913';
+}
+
+.qc-icon-down::before {
+    content: '\e918';
+}
+
+.qc-icon-arrow-right::before {
+    content: '\e919';
+}
+
+.qc-icon-calendar2::before {
+    content: '\e91a';
+}
+
+.qc-icon-home::before {
+    content: '\e91d';
+}
+
+.qc-icon-search::before {
+    content: '\e921';
+}
+
+.qc-icon-search2::before {
+    content: '\e922';
+}
+
+.qc-icon-order::before {
+    content: '\e92e';
+}
+
+.qc-icon-road-map::before {
+    content: '\e942';
+}
+
+.qc-icon-smart-phone::before {
+    content: '\e943';
+}
+
+.qc-icon-time::before {
+    content: '\e944';
+}
+
+.qc-icon-unqualified::before {
+    content: '\e945';
+}
+
+.qc-icon-tip::before {
+    content: '\e946';
+}
+
+.qc-icon-weight::before {
+    content: '\e947';
+}
+
+.qc-icon-warning::before {
+    content: '\e948';
+}
+
+.qc-icon-phone-call::before {
+    content: '\e94a';
+}
+
+.qc-icon-arrow-left::before {
+    content: '\e901';
+}
