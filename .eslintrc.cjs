@@ -13,7 +13,7 @@ module.exports = {
     rules: {
 
         // 'no-unused-vars': 'off',
-        // '@typescript-eslint/no-unused-vars': 'warning',
+        // '@typescript-eslint/no-unused-vars': 'error',
 
         // 允许使用any
         '@typescript-eslint/no-explicit-any': 'off',
@@ -82,7 +82,7 @@ module.exports = {
         'vue/no-undef-components': [
             'error',
             {
-                ignorePatterns: ['u(\\-\\w+)+', 'up(\\-\\w+)+', 'qc(\\-\\w+)+', 'router-view']
+                ignorePatterns: ['u(\\-\\w+)+', 'up(\\-\\w+)+', 'qc(\\-\\w+)+', 'router-view', 'scroll-view']
             }
         ],
 

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-this-alias */
 class Config {
     method: any
     url: any
@@ -21,7 +20,6 @@ class Config {
 
     // HTTP请求
     xhrRequest () {
-        const _this = this
         uni.request({
             url: this.url,
             data: this.param,
@@ -33,7 +31,7 @@ class Config {
                     uni.reLaunch({ url: '/pages/login/index' })
 
                 } else if (res.data.status === 200 || [0, 1].includes(res.data.code)) {
-                    return _this.response(res.data, { header: res.header, url: _this.url, param: _this.param })
+                    return this.response(res.data, { header: res.header, url: this.url, param: this.param })
                 } else {
                     uni.showToast({
                         title: res.data.message,

@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/no-undef-components -->
 <template>
     <scroll-view :style="{ height: height }" scroll-y refresher-enabled :refresher-triggered="refresh" class="qc-scroll-view" @scroll="emit('scroll', $event)" @refresherrefresh="emit('update', 'refresh')" @scrolltolower="emit('update', '')">
         <template v-if="value">

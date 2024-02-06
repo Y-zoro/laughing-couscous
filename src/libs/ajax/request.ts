@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 import Config from './config.js'
 import { url } from './url.js'
 
@@ -40,11 +39,11 @@ const request = (option: any, fn: any) => {
         if (option.url) {
             option.param = option.param || {}
 
-            const weixin_login_code = uni.getStorageSync('TOKEN')
+            const weixinLoginCode = uni.getStorageSync('TOKEN')
             return new Config({
                 header: {
                     'content-type': 'application/x-www-form-urlencoded',
-                    cookie: `weixin_login_token=${weixin_login_code}`
+                    cookie: `weixin_login_token=${weixinLoginCode}`
                 },
                 method: option.method || 'POST',
                 url: option.url.includes('api.poscom') ? option.url : url + option.url,
