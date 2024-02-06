@@ -6,26 +6,30 @@
 
 ```
 yarn
+
+```
+
+```
 npm i
 ```
 
-##启动项目
+## 启动项目
 
 ```
 npm dev
 ```
 
-###运行成功后使用微信开发工具打开dist/dev/mp-weixin目录
+### 运行成功后使用微信开发工具打开dist/dev/mp-weixin目录
 
-##mixins 混入提供列表/新增/详情公共逻辑
+## mixins 混入提供列表/新增/详情公共逻辑
 
-##plop 自动化生成目录
+## plop 自动化生成目录
 
 ```
 npx plop
 ```
 
-###例如输入文件名称：home, title名：首页
+### 例如输入文件名称：home, title名：首页
 
 1. 自动生成pages/home 文件下index | add | detail 三个vue文件 和一个公共index.ts 文件
 2. 自动生成api/home index.ts 文件
